@@ -4,13 +4,136 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- --Google-font-- -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- --Google-font-- -->
     <link href="/dist/output.css" rel="stylesheet">
+    <style>
+        .line {
+            position: relative;
+        }
+
+        .line::after {
+            content: '';
+            position: absolute;
+            border-bottom: 1px solid #000;
+            width: 25%;
+            top: 48%;
+            right: 55%;
+        }
+
+        .line::before {
+            content: '';
+            position: absolute;
+            border-bottom: 1px solid #000;
+            width: 25%;
+            top: 48%;
+            left: 55%;
+        }
+    </style>
 </head>
 
 <body>
-    <h1 class="text-3xl font-bold underline text-red-600">
-        Hello world!
-    </h1>
+    <div class="bg-Light_ash">
+        <div class=" container mx-auto py-4 px-4 ">
+            <div class=" flex justify-between items-center">
+                <div class="">
+                    <a href="#">
+                        <img src="../src/img/Logo.png" alt="#">
+                    </a>
+                </div>
+                <div class=" flex items-center">
+                    <div class=" text-3xl text-Purple_blue mr-8">
+                        <iconify-icon icon="mdi:user"></iconify-icon>
+                    </div>
+                    <div class="flex items-center">
+                        <button class=" font-Nunito text-xs font-bold bg-white px-2.5 py-2">ENG</button>
+                        <button
+                            class=" font-Nunito text-xs font-bold  bg-Purple_blue px-2.5 py-2 text-white">إنجليزي</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ===================Header-End=============== -->
+
+    <div class=" container mx-auto">
+        <h2 class=" text-2xl font-bold  text-black_light font-Nunito text-center  mt-15  leading-8">Welcome Back!</h2>
+        <p class="text-black_light font-Nunito text-center leading-5">Sign In to continue</p>
+        <div class="sm:w-4/12 mx-auto mt-8  p-4">
+            <form action="">
+                <div class="bg-Light_ash flex items-center px-5 py-3 rounded-full">
+                    <div class=" mr-2  text-sm text-Purple_blue mt-1">
+                        <iconify-icon icon="fa:envelope"></iconify-icon>
+                    </div>
+                    <div class="w-full">
+                        <input
+                            class=" w-full font-Nunito border-none  text-base font-medium pr-6 bg-transparent text-Purple_blue focus:outline-none placeholder:text-lg  placeholder:text-Purple_blue"
+                            type="email" placeholder="ahmedishtiuq@gmail.com">
+                    </div>
+
+                </div>
+                <div class="bg-Light_ash flex items-center px-5 py-3 rounded-full mt-4">
+                    <div class=" mr-2  text-sm text-Purple_blue mt-1">
+                        <iconify-icon icon="fa:envelope"></iconify-icon>
+                    </div>
+                    <div class="w-full ">
+                        <input
+                            class=" w-full font-Nunito border-none  text-base font-medium pr-6 bg-transparent text-Purple_blue focus:outline-none placeholder:text-lg  placeholder:text-Purple_blue"
+                            type="password" placeholder="****************">
+                    </div>
+
+                </div>
+                <div class=" flex  justify-between items-center mt-4">
+                    <div class="flex items-center">
+                        <input type="checkbox" class=" mr-2  font-Nunito text-sm text-black_light" />
+                        <p>Remember me</p>
+
+                    </div>
+                    <div class="">
+                        <button class=" font-Nunito text-sm text-black_light ">Forget password?</button>
+                    </div>
+                </div>
+                <div class=" bg-Purple_blue flex  justify-center items-center px-5 py-3 rounded-full mt-4">
+                    <button class=" text-white  text-base font-medium bg-transparent ">Sign In</button>
+                </div>
+            </form>
+
+            <div class="flex justify-center items-center mt-4">
+                <p class=" text-sm text-black_light font-Nunito">Don’t have an account?</p>
+                <a href="#" class="text-sm  text-Purple_blue font-Nunito ml-3">Sign up!</a>
+            </div>
+        </div>
+
+
+
+    </div>
+    <!--=============== --Form-end--================= -->
+    <div class=" mt-15 mx-auto line">
+        <h2 class=" text-lg text-Purple_blue font-Nunito text-center font-bold ">OR</h2>
+    </div>
+    <!-- ==============OR line End ========== -->
+
+    <div class=" container mx-auto mt-15 ">
+        <div class="  w-64 mx-auto border border-Purple_blue rounded-full flex justify-center items-center py-1">
+            <p class="mt-1 mr-2 text-2xl"><iconify-icon icon="fluent:fingerprint-20-filled"></iconify-icon></p>
+            <p class=" text-lg  font-bold text-black_light font-Nunito">Sign in with UAE PASS</p>
+        </div>
+    </div>
+    <!-- ==========Sign-in UAE pass=============== -->
+    <div class="container mx-auto">
+        <p class=" font-Nunito text-Purple_blue text-lg text-center mt-5">A single trusted digital identity for all
+            citizens, residents and visitiors</p>
+    </div>
+    <!-- ========Singke Trust end================ -->
+
+    <div class=" bg-Purple_blue py-3 mt-48">
+        <p class=" font-Nunito text-center text-white  text-lg font-bold">All rights reserved @ 2022</p>
+    </div>
+
+    <script src="https://code.iconify.design/iconify-icon/1.0.2/iconify-icon.min.js"></script>
 </body>
 
 </html>
